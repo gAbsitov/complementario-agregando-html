@@ -13,8 +13,21 @@ const pokemon2 = new Pokemon("Chimchar", ["Fuego"], "Chimchar es un Pokémon int
 const pokemon3 = new Pokemon("Totodile", ["Agua"], "Totodile es un Pokémon introducido en la segunda generación y es uno de los Pokémon iniciales que puedes elegir al iniciar tu aventura, junto a Cyndaquil y Chikorita.", "Johto", "./imagenes/totodile.jpg")
 const pokemon4 = new Pokemon("Tyranitar", ["Roca", "Siniestro"], "Tyranitar es un Pokémon introducido en la segunda generación. Es la evolución de Pupitar, a partir de la sexta generación puede megaevolucionar en Mega-Tyranitar.", "Kalos Montaña", "./imagenes/tyranitar.jpg")
 
-
 const pokemones = [pokemon1, pokemon2, pokemon3, pokemon4]
+
+alert("Hola que tal! aca te dejamos una lista con los pokemones mas queridos de la comunidad, echales un vistazo")
+
+let respuesta
+
+do {
+    respuesta = parseFloat(prompt(" Si deseas ver a los pokemones ingrese 1. Si no le gustan los pokemones ingrese 2."))
+    if ((respuesta != 1)){
+        alert("Por favor ingrese un número válido")
+    }if(respuesta == 2){
+       alert ("Como no te van a gustar los pokemones?? Ingresa 1 anda") 
+    }
+} while((respuesta != "1"))
+
 
 const divPokemones = document.getElementById('pokemones')
 
@@ -31,3 +44,4 @@ pokemones.forEach(pokemonesArray => {
   </div>
     `
 })
+

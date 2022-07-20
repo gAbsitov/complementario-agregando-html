@@ -1,5 +1,6 @@
  #pokemones{
-  margin-top: 5rem;
+  margin: 5rem;
+  gap: 3rem;
 }
 
 img {
